@@ -24,52 +24,117 @@
     rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css" type="text/css">
 
+  <!--Google APIs-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/main.css">
+  <!-- Swiper.js -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"
+    integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollToPlugin.min.js"
+    integrity="sha512-agNfXmEo6F+qcj3WGryaRvl9X9wLMQORbTt5ACS9YVqzKDMzhRxY+xjgO45HCLm61OwHWR1Oblp4QSw/SGh9SA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+    integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script defer src="./js/main.js"></script>
 </head>
 
 <body>
+  <div id="nav">
+    <div id="title">CARTOONNETWORK</div>
+  </div>
+
   <header>
-    <div>
-      <div id="nav_title">카툰네트워크 서브 페이지</div>
-      <ul class="main-menu">
-        <li class="item">
-          <div class="item__name">목록</div>
-          <div class="item__contents">
-            <div class="contents__menu">
-              <ul class="inner">
-                <li>
-                  <h4>작품 목록</h4>
-                  <ul>
-                    <li>카툰네트워크</li>
-                    <li>해나-바베라</li>
-                    <li>워너브라더스</li>
-                    <li>한국 작품</li>
-                  </ul>
-                </li>
-                <li>
-                  <h4>새소식</h4>
-                  <ul>
-                    <li>관련 뉴스</li>
-                    <li>홍보 영상</li>
-                  </ul>
-                </li>
-              </ul>
-          </div>
-        </li>
-      </ul>
-    </div> 
+    <div class="header-content">
+      <div class="header-content-inner">
+        <h1 style="font-size: 65px;"><br>카툰네트워크<br>새 소식</h1>
+        <p>카툰네트워크의 최신 방영작과 새로운 소식은 어떤 것이 있을까?<br>홍보 영상을 확인해보자</p>
+
+      </div>
+    </div>
   </header>
-  <section class="visual">
-    <div class="inner">
-      <div class="title">
-        <img src="header.jpg"/>
+
+  <section class="bg-primary" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+          <h2 class="section-heading"></h2>
+          <div id="ad_v">홍보 영상</div>
+          <br>
+          <p class="text-faded">카툰네트워크의 홍보 영상이다.</p>
+          <br>
+          <br>
+        </div>
+      </div>
+      <div class="video-frame">
+        <iframe width="1120" height="630" src="https://www.youtube.com/embed/4nJc_VW_6nA" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe>
+      </div>
+      <a href="https://www.youtube.com/@cartoonnetworkuk" class="btn-two rounded">관련 영상 더보기</a>
+      </button>
+    </div>
+  </section>
+
+  <section class="bg-primary2" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 text-center">
+          <h2 class="section-heading"></h2>
+          <div id="ad_v">작품 리스트</div>
+          <br>
+          <p class="text-faded2">슬라이더를 통해 카툰네트워크의 작품들을 알아보자</p>
+          <br>
+          <section class="list">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/list1.jpg" />
+                  <a href="javascript:void(0)" class="btn">파워퍼프걸</a>
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/list2.jpg" />
+                  <a href="javascript:void(0)" class="btn">스티븐<br>유니버스</a>
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/list3.jpg" />
+                  <a href="javascript:void(0)" class="btn">벤10</a>
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/list4.jpg" />
+                  <a href="javascript:void(0)" class="btn">틴 타이탄</a>
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/list5.jpg" />
+                  <a href="javascript:void(0)" class="btn">핀과 제이크의<br>어드벤처 타임</a>
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/list6.jpg" />
+                  <a href="javascript:void(0)" class="btn">톰과 제리</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev">
+              <span class="material-icons">arrow_back</span>
+            </div>
+            <div class="swiper-button-next">
+              <span class="material-icons">arrow_forward</span>
+            </div>
+          </section>
+        </div>
       </div>
     </div>
   </section>
 
-
-
-
-  <!-- footer 영역
   <footer>
     <div class="inner">
       <ul class="menu">
@@ -96,7 +161,7 @@
         ⓒ 2023 CartoonNetwork. All Rights Reserved.
       </p>
     </div>
-  </footer> -->
+  </footer>
 </body>
 
 </html>
