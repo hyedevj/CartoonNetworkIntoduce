@@ -7,6 +7,15 @@ body {
 a {
     text-decoration: none;
 }
+a:link {
+  color : #e9684b;
+}
+a:visited {
+  color : #e9684b;
+}
+a:hover {
+  color : #e9684b8c;
+}
 
 #nav {
     width: 100%;
